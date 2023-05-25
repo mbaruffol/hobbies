@@ -1,0 +1,146 @@
+/* MAIN STYLE SHEET FOR ALL PAGES */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: rgb(37, 150, 190);
+	padding-bottom: 1vh;
+	margin-bottom: 5vh;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	background-color: white;
+	margin: auto;
+	line-height: 2em;
+}
+
+/* style for the navigation menu */
+.nav_menu {
+	padding: 0 0 2vh 0;
+}
+
+.nav_menu ul {
+	width: 100%;
+	display: inline-block;
+	list-style-type: none;
+	padding: 0.5em 4vh;
+	margin: 0;
+	background-color: rgb(37, 150, 190);
+	text-align: center;
+	border-bottom: white solid 0.25vh;
+	border-top: white solid 0.25vh;
+}
+
+.nav_menu a {
+	float: none;
+	padding: 0.5em 2vh;
+	margin: auto;
+	color: white;
+	text-decoration: none;
+	font-size: 2.5vh;
+	width: 20%;
+	text-align: center;
+}
+
+.nav_menu li {
+	float: left;
+	width: 20%;
+}
+
+.nav_menu a.current {
+	color: white;
+}
+
+.nav_menu a:hover {
+	background-color: rgb(252, 103, 12);
+}
+/*NAVIGATION STYLE END*/
+
+img {
+	margin-bottom: 2vh;
+	margin-top: 2vh;
+	width: 100%;
+	border: rgb(252, 103, 12) solid 1vh;
+}
+
+header img {
+	margin: 1vh;
+}
+
+h1,
+h2 {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	font-size: 2em;
+}
+
+h1 {
+	color: rgb(37, 150, 190);
+	font-weight: bold;
+}
+
+h2 {
+	color: rgb(252, 103, 12);
+	font-weight: lighter;
+}
+
+h3 {
+	color: rgb(37, 150, 190);
+	font-size: 1.5em;
+}
+
+h4 {
+	color: rgb(255, 255, 255);
+	font-size: 1em;
+	font-style: oblique;
+	background-color: rgb(252, 103, 12);
+	padding: 0.5vh;
+}
+
+p {
+	text-align: justify;
+	font-size: 1em;
+}
+
+aside {
+	background-color: lightgray;
+}
+
+blockquote {
+	background-color: rgba(103, 172, 197, 0.397);
+}
+
+table th,
+td {
+	width: 33%;
+	word-wrap: break-word;
+	padding: 1vh 3vh;
+}
+
+table td {
+	font-style: oblique;
+}
+
+.saveForLaterButton {
+	width: 20vh;
+	color: white;
+	font-style: normal;
+	font-size: 2vh;
+	background-color: rgb(37, 150, 190);
+	border: none;
+	border-radius: 1vh;
+	font-weight: bold;
+}
+footer {
+	display: block;
+	color: white;
+	background-color: rgb(37, 150, 190);
+	text-align: center;
+	font-size: 0.75em;
+	font-style: italic;
+	margin-top: 1em;
+}
