@@ -1,20 +1,20 @@
 //Create an empry array to store the bookmarked items   
-let contentArray = []
+let bookmarkArray = []
 
 //Create a function for when button is clicked
 function bookmarkArticle(button) {
     //Get the current information from storage
-    let contentArray = JSON.parse(localStorage.getItem('content')) || [];
+    let bookmarkArray = JSON.parse(localStorage.getItem('content')) || [];
     //Get the content that the button relates to using parentNode
     let article = button.parentNode;
     //Copy the content from the parentNode
     let newContent = article.innerHTML;
     //push the content to the array
-    contentArray.push(newContent);
+    bookmarkArray.push(newContent);
     //Create an alert for how many items are in the saved folder.
-    alert("Your item has been saved. You have " + contentArray.length + " item/s in your Saved Folder.")
+    alert("Your item has been saved. You have " + bookmarkArray.length + " item/s in your Saved Folder.")
     //Store the saved items into local storage
-    localStorage.setItem("content", JSON.stringify(contentArray));
+    localStorage.setItem("content", JSON.stringify(bookmarkArray));
 }
 
 //Create event listener for the destination page
